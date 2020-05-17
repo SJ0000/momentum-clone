@@ -1,9 +1,44 @@
+* {
+  font-family: "Balsamiq Sans";
+}
+
 body {
   background-color: #ecf0f1;
 }
 
-h1 {
-  color: #2980b9;
+h1,
+span,
+input,
+.links i {
+  color: #f5f6fa;
+}
+
+input {
+  background: none;
+  border: none;
+  font-size: 40px;
+}
+
+input:focus {
+  outline: none;
+  text-decoration-line: underline;
+}
+
+.js-footer {
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 270px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .clicked {
@@ -15,7 +50,7 @@ h1 {
 }
 
 .form,
-.greeting {
+.greetings {
   display: none;
 }
 
@@ -40,4 +75,46 @@ h1 {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.clock__title {
+  font-size: 180px;
+  font-weight: 700;
+  display: block;
+}
+
+.middle-messages,
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-messages {
+  margin-bottom: 80px;
+}
+
+.greetings {
+  font-size: 70px;
+}
+
+.js-toDoList {
+  list-style: none;
+}
+
+.toDoList__item {
+  font-size: 25px;
+}
+
+.links__text {
+  margin-right: 10px;
+}
+
+.header > * {
+  font-size: 25px;
+}
+
+.js-footer .footer__text {
+  font-size: 20px;
 }

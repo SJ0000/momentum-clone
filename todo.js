@@ -4,6 +4,7 @@ const toDoList = document.querySelector(".js-toDoList");
 
 //Todos Local Storage
 const TODOS_LS = "toDos";
+const TODOS_ITEM = "toDoList__item";
 
 //local Storage에 저장하기 위해
 let toDos = [];
@@ -31,10 +32,11 @@ function paintToDo(text) {
   delBtn.addEventListener("click", deleteToDo);
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  span.innerText = text;
+  span.innerText = ` ${text}`;
   li.appendChild(delBtn);
   li.appendChild(span);
   li.id = newId;
+  li.classList.add(TODOS_ITEM);
   toDoList.appendChild(li);
   const toDoObj = {
     text: text,

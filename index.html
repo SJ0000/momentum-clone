@@ -2,26 +2,54 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/5c0808e2ba.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Something</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
+    <header class="header">
+      <div class="links">
+        <span class="links__text">Links</span>
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="weather">
+        <span class="js-weather"></span>
+      </div>
+    </header>
+    <div class="middle-messages">
+      <div class="js-clock">
+        <span class="clock__title">00:00</span>
+      </div>
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?"">
+      </form>
+      <span class="js-greetings greetings"></span>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?"">
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
+    <div class="todo-form">
+      <form class="js-toDoForm">
+        <input
+          type="text"
+          placeholder="Write a to do                  "
+          class="todo-form__input"
+        />
+      </form>
+      <ul class="js-toDoList"></ul>
+    </div>
+    <footer class="js-footer">
+      <span class="footer__text"></span>
+    </footer>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+    <script src="footer.js"></script>
   </body>
 </html>
